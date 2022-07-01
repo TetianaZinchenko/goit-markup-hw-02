@@ -3,11 +3,11 @@
   --title-text-color: #000000;
   --accent-color: #2196f3;
   --contacts-color: #212121;
-  --another-color: #ffffff;
   --footer-link-color: rgba(255, 255, 255, 0.6);
+
   --primary-bg-color: #ffffff;
   --additional-bg-color: #2f303a;
-  --add-bg-color: #2196f3;
+  --btn-bg-color: #188ce8;
   --bg-color: #f5f4fa;
 }
 
@@ -36,7 +36,7 @@ body {
   font-family: 'Raleway';
   font-weight: 700;
   font-size: 26px;
-  line-height: 1.19;
+  line-height: calc(31 / 26);
 }
 
 .header-contacts-one,
@@ -65,7 +65,7 @@ body {
 .header-contacts-three {
   font-weight: 500;
   font-size: 14px;
-  line-height: 1.14;
+  line-height: calc(16 / 14);
   letter-spacing: 0.02em;
 }
 
@@ -84,7 +84,7 @@ body {
   text-decoration: none;
   font-weight: 500;
   font-size: 14px;
-  line-height: 1.14;
+  line-height: calc(16 / 14);
   letter-spacing: 0.02em;
 }
 
@@ -93,25 +93,32 @@ body {
 }
 
 .title {
-  color: var(--another-color);
+  color: var(--primary-bg-color);
   font-weight: 900;
   font-size: 44px;
-  line-height: 1.36;
+  line-height: calc(60 / 44);
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
 
 .button-service {
-  background-color: var(--add-bg-color);
+  background-color: var(--accent-color);
   border: none;
   border-radius: 4px;
-  color: var(--another-color);
+  color: var(--primary-bg-color);
+  font-family: inherit;
   font-weight: 700;
   font-size: 16px;
-  line-height: 1.88;
+  line-height: calc(30 / 16);
   text-align: center;
   letter-spacing: 0.06em;
+  cursor: pointer;
+}
+
+.button-service:hover,
+.button-service:focus {
+  background-color: var(--btn-bg-color);
 }
 
 .peculiarities-list {
@@ -124,7 +131,7 @@ body {
 .peculiarity-four-title {
   font-weight: 700;
   font-size: 14px;
-  line-height: 1.14;
+  line-height: calc(16 / 14);
   text-transform: uppercase;
   color: var(--contacts-color);
 }
@@ -134,13 +141,13 @@ body {
 .peculiarity-three,
 .peculiarity-four {
   font-size: 14px;
-  line-height: 1.71;
+  line-height: calc(24 / 14);
 }
 
 .we-doing-title {
   font-weight: 700;
   font-size: 36px;
-  line-height: 1.17;
+  line-height: calc(42 / 36);
   text-align: center;
   color: var(--contacts-color);
 }
@@ -156,7 +163,7 @@ body {
 .team-title {
   font-weight: 700;
   font-size: 36px;
-  line-height: 1.17;
+  line-height: calc(42 / 36);
   text-align: center;
   color: var(--contacts-color);
 }
@@ -168,24 +175,22 @@ body {
 .team-member-name {
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.19;
+  line-height: calc(19 / 16);
   text-align: center;
   color: var(--contacts-color);
 }
 
 .team-member-prof {
   font-size: 16px;
-  line-height: 1.19;
+  line-height: calc(19 / 16);
   text-align: center;
 }
 
-.footer-address:hover,
 .footer-link-email:hover,
 .footer-link-tel:hover,
-.footer-address:focus,
 .footer-link-email:focus,
 .footer-link-tel:focus {
-  color: var(--accent-color);
+  color: var(--primary-bg-color);
 }
 
 .footer-contacts {
@@ -197,7 +202,7 @@ body {
   font-family: 'Raleway';
   font-weight: 700;
   font-size: 26px;
-  line-height: 1.19;
+  line-height: calc(31 / 26);
 }
 
 .footer-web {
@@ -205,7 +210,7 @@ body {
 }
 
 .footer-studio {
-  color: var(--another-color);
+  color: var(--primary-bg-color);
 }
 
 .footer-address-list {
@@ -219,12 +224,12 @@ body {
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
-  line-height: 1.71;
-  color: var(--another-color);
+  line-height: calc(24 / 14);
+  color: var(--primary-bg-color);
 }
 
 .footer-address {
-  color: var(--another-color);
+  color: var(--primary-bg-color);
 }
 
 .footer-link-email {
@@ -244,21 +249,19 @@ body {
   background-color: var(--bg-color);
   color: var(--contacts-color);
   border-radius: 4px;
+  font-family: inherit;
+  cursor: pointer;
 }
 
 .button:hover,
 .button:focus {
-  background-color: var(--add-bg-color);
-  color: var(--another-color);
+  background-color: var(--accent-color);
+  color: var(--primary-bg-color);
 }
 
 .btn-active {
-  background-color: var(--add-bg-color);
-  color: var(--another-color);
-}
-
-.filter {
-  cursor: pointer;
+  background-color: var(--accent-color);
+  color: var(--primary-bg-color);
 }
 
 .button-one,
@@ -270,7 +273,7 @@ body {
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
-  line-height: 1.63;
+  line-height: calc(26 / 16);
   text-align: center;
 }
 
@@ -282,12 +285,12 @@ body {
   color: var(--contacts-color);
   font-weight: 700;
   font-size: 18px;
-  line-height: 2;
+  line-height: calc(36 / 18);
   letter-spacing: 0.06em;
 }
 
 .proect-class {
   color: var(--primary-text-color);
   font-size: 16px;
-  line-height: 1.88;
+  line-height: calc(30 / 16);
 }
